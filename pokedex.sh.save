@@ -1,0 +1,6 @@
+#!/bin/bash
+cd /home/akiraviga/IdeaProjects/pokemonterminal/src
+java Main
+chmod +x pokedex.sh
+./pokedex.sh
+
