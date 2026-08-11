@@ -147,9 +147,3 @@ java -jar pokemon.jar
 ```
 
 ---
-
-## Creditos
-
-Feito por akirahellsing / gabriel2007.viga
-
-Baseado nos mecanismos de Pokemon Fire Red.
