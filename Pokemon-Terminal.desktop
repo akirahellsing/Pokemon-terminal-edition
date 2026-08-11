@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Pokemon Terminal Edition
+Comment=Jogo de Pokemon para terminal
+Exec=bash -c 'cd "$(dirname "%k")" && ./run.sh'
+Icon=utilities-terminal
+Type=Application
+Terminal=true
+Categories=Game;
