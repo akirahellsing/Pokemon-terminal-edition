@@ -1,3 +1,3 @@
 #!/bin/bash
-java -jar pokedex.jar
-
+cd "$(dirname "$0")"
+java -jar pokemon.jar
