@@ -1,4 +1,5 @@
-package PACKAGE_NAME;
-
-public class PokemonType {
+public enum PokemonType {
+    NORMAL, FIGHTING, FLYING, POISON, GROUND, ROCK,
+    BUG, GHOST, FIRE, WATER, GRASS,
+    ELECTRIC, PSYCHIC, ICE, DRAGON
 }
