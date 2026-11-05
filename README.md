@@ -66,8 +66,10 @@ cd /caminho/para/pokemon-terminal-edition
 ```bash
 ./run.sh
 ```
+4. instale
 ./install.sh
-
+```
+```
 depois é só digitar pokemonterminal pra abrir legal
 
 
