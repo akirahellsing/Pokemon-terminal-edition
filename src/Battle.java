@@ -103,7 +103,7 @@ public class Battle {
 
         for (int i = 0; i < 4; i++) {
             Move m = p.getMove(i);
-            if (m != null && m.hasPP()) {
+            if (m != null) {
                 if (m.getPower() > 0) {
                     attackMoves.add(m);
                 } else {
@@ -112,14 +112,14 @@ public class Battle {
             }
         }
 
-        if (!attackMoves.isEmpty()) {
-            if (Math.random() < 0.9) {
-                return attackMoves.get((int)(Math.random() * attackMoves.size()));
+        if (!statusMoves.isEmpty()) {
+            if (Math.random() < 0.8) {
+                return statusMoves.get((int)(Math.random() * statusMoves.size()));
             }
         }
 
-        if (!statusMoves.isEmpty()) {
-            return statusMoves.get((int)(Math.random() * statusMoves.size()));
+        if (!attackMoves.isEmpty()) {
+            return attackMoves.get((int)(Math.random() * attackMoves.size()));
         }
 
         return null;

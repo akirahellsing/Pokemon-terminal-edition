@@ -2,25 +2,38 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
+        boolean running = true;
 
-        TitleScreen.showSplash(sc);
-
-        int escolha = TitleScreen.showMenu(sc);
-
-        if (escolha == 2) {
+        while (running) {
             limparTela();
-            System.out.println();
-            System.out.println("    Closing game...");
-            System.out.println();
-            sc.close();
-            return;
+            System.out.println("=== POKEMON TERMINAL EDITION ===");
+            System.out.println("1 - Story Mode");
+            System.out.println("2 - Stadium Mode (NEW!!)");
+            System.out.println("3 - Exit");
+            System.out.print("Choose an option: ");
+
+            int choice = scanner.nextInt();
+            scanner.nextLine();
+
+            switch (choice) {
+                case 1:
+                    Game game = new Game(scanner);
+                    game.start();
+                    break;
+                case 2:
+                    StadiumMode.iniciar(scanner);
+                    break;
+                case 3:
+                    running = false;
+                    limparTela();
+                    System.out.println("Exiting... Goodbye!");
+                    break;
+                default:
+                    System.out.println("Invalid option! Please try again.");
+            }
         }
-
-        Game game = new Game(sc);
-        game.start();
-
-        sc.close();
+        scanner.close();
     }
 
     private static void limparTela() {
