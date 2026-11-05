@@ -66,6 +66,10 @@ cd /caminho/para/pokemon-terminal-edition
 ```bash
 ./run.sh
 ```
+./install.sh
+
+depois é só digitar pokemonterminal pra abrir legal
+
 
 **Alternativa pelo icone (nem sempre funciona):**
 - Clique com o botao direito em `Pokemon-Terminal.desktop`
